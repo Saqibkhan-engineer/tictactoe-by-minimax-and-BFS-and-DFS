@@ -26,3 +26,32 @@ If you prefer to run it on your own machine, follow these steps:
 4. Run the following command:
    ```bash
    python tictactoe.py
+
+# 🗺️ Graph Traversal: BFS & DFS in Python
+
+This project is a simple Python implementation of two foundational graph traversal algorithms: **Breadth-First Search (BFS)** and **Depth-First Search (DFS)**. To make the concepts easy to visualize, the graph represents a small network of connected cities in Pakistan.
+
+## ⚙️ How it Works
+
+*   **The Graph:** The cities and their connections (edges) are defined using a Python dictionary (`graph`), where each key is a city and its value is a list of connected neighboring cities.
+*   **BFS (Breadth-First Search):** This algorithm explores the graph level-by-level, visiting all immediate neighbors of a node before moving deeper. It is implemented using a Queue (`collections.deque`), which follows the First-In-First-Out (FIFO) principle.
+*   **DFS (Depth-First Search):** This algorithm explores as far as possible along a single path until it hits a dead end, then backtracks to explore other branches. In this script, it is implemented elegantly using **Recursion**.
+
+## 🚀 How to Run
+
+1.  Make sure you have Python installed on your system.
+2.  Save the code into a new Python file (e.g., `graph_search.py`).
+3.  Open your terminal or command prompt, navigate to the folder where the file is saved, and run the following command:
+    ```bash
+    python graph_search.py
+    ```
+4.  The terminal will print the exact traversal sequences for both BFS and DFS starting from 'Karachi'.
+
+## 💡 Output Example
+When you run the script, you will see the traversal paths printed sequentially like this:
+
+**BFS starting from Karachi:**
+`Karachi -> Lahore -> Faisalabad -> Islamabad -> Multan -> Peshawar -> Quetta ->`
+
+**DFS starting from Karachi:**
+`Karachi -> Lahore -> Islamabad -> Peshawar -> Quetta -> Multan -> Faisalabad ->`
